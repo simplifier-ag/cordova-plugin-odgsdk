@@ -3,6 +3,9 @@
 Implements the ODG SDK to enable various device depending capabilities.
 
 ## Using
+Install plugin
+
+    $ cordova plugin add https://stash.itizzimo.com/scm/cor/cordova-plugin-odgsdk.git
 
 ### Change Input modes
 As default applications will launch with "Mouse/Cursor" input.
