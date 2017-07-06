@@ -43,7 +43,7 @@ Disables both displays
 #### Both Displays on
 Enables both displays
 
-    $ odg.setDisplayBothOff(successCallback, errorCallback);
+    $ odg.setDisplayBothOn(successCallback, errorCallback);
     
 #### Turn Left Display off and Right Display on
 Turn off the left display and leaves the right one on
