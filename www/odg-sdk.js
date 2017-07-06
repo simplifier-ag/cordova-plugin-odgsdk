@@ -26,7 +26,7 @@ module.exports = {
         cordova.exec(successCallback, errorCallback, "ODG", "setDisplayDim", null);
     },
     getBrightness: function (successCallback, errorCallback) {
-        cordova.exec(successCallback, errorCallback, "ODG", "getBrightnessLevel", null);
+        cordova.exec(successCallback, errorCallback, "ODG", "getBrightness", null);
     },
 
     //input
