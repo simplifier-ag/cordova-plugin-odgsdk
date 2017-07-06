@@ -91,9 +91,9 @@ Returns brightness mode
     
 Return values is success callback:
 
-    "Bright" - both displays are off 
-    "Dim" - both displays are on
-    "unknown" - left display is off, right is on 
+    "Bright" - display is bright 
+    "Dim" - display is dim
+    "unknown" - value could not be evaluated 
 
 # More Info
 
