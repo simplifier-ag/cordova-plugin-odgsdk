@@ -1,5 +1,29 @@
 /*global cordova, module*/
 
+//switch input modes with dedicated input change button
+document.addEventListener("keyup", function(evt){
+    if((device.model === "R7-W") && (evt.keyIdentifier === "U+0000") && (evt.keyCode === 0)){
+        odg.getInputMode(function(result){
+            var changeInputSuccess = function(){
+                odg.getInputMode(function(result){
+                    console.log("Changed input mode to: " + result)
+                })
+            };
+
+            var changeInputError = function(error){
+                console.error(error);
+            };
+
+            if(result === "Trackball"){
+                odg.setMouseInput(changeInputSuccess, changeInputError)
+            } else if(result === "Mouse"){
+                odg.setTrackballInput(changeInputSuccess, changeInputError)
+            }
+        })
+    }
+
+}, false);
+
 module.exports = {
     //display modes
     setDisplayBothOff: function (successCallback, errorCallback) {
