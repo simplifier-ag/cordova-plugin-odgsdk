@@ -24,7 +24,7 @@
     </config-file>
 
     <source-file src="src/android/ODG.java" target-dir="src/com/osterhoutgroup/sdk/"/>
-    <resource-file src="src/android/libs/com.osterhoutgroup.api.ext.jar" target="libs/com.osterhoutgroup.api.ext.jar"/>
+    <lib-file src="src/android/libs/com.osterhoutgroup.api.ext.jar" />
 
     <framework src="src/android/build.gradle" custom="true" type="gradleReference"/>
   </platform>
