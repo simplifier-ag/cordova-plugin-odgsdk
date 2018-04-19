@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
         id="cordova-plugin-odgsdk"
-        version="1.0.0">
+        version="1.1.0">
 
   <name>cordova-plugin-odgsdk</name>
 
@@ -24,7 +24,7 @@
     </config-file>
 
     <source-file src="src/android/ODG.java" target-dir="src/com/osterhoutgroup/sdk/"/>
-    <source-file src="src/android/libs/com.osterhoutgroup.api.ext.jar" target-dir="libs/"/>
+    <lib-file src="src/android/libs/com.osterhoutgroup.api.ext.jar" />
 
     <framework src="src/android/build.gradle" custom="true" type="gradleReference"/>
   </platform>
