@@ -1,22 +1,22 @@
 # Cordova Plugin for ODG
 
-Implements the ODG SDK to enable various device depending capabilities.
+Wraps the ODG SDK to enable various device depending capabilities with cordova.
 
 ## Using
 Install plugin
 
-    $ cordova plugin add https://stash.itizzimo.com/scm/cor/cordova-plugin-odgsdk.git
+    $ cordova plugin add https://github.com/simplifier-ag/cordova-plugin-odgsdk.git
 
 ### Input
 As default applications will launch with "Mouse/Cursor" input.
 
 #### Trackball (e.g. DPAD)
-This will set the input mode to a DPAD-like behavior.
+Sets the input mode to a DPAD-like behavior.
 
     $ odg.setTrackballInput(successCallback, errorCallback);
     
 #### Mouse (e.g. Cursor)
-This will set the input mode to mouse and a cursor will be shown
+Sets the input mode to mouse and a cursor will be shown
 
     $ odg.setMouseInput(successCallback, errorCallback);
     
@@ -25,11 +25,11 @@ Returns active input mode as string
 
     $ odg.getInputMode(successCallback, errorCallback);
     
-Return values is success callback:
+Return values in success callback:
 
-    "Mouse" - Cursor is shown 
+    "Mouse" - Input mode is Mouse/Cursor 
     
-    "Trackball" - sends DPAD inputs
+    "Trackball" - Input mode is DPAD/Trackball
     
     
 ### Display Modes
@@ -98,3 +98,5 @@ Return values is success callback:
 # More Info
 
 For more information see [ODG Developer Center](https://developer.osterhoutgroup.com)
+
+Update: ODG does not exist anymore.
